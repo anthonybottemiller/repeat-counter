@@ -13,7 +13,9 @@
     });
 
     $app->post("/count", function () use ($app) {
-      return $app['twig']->render('result.html.twig');
+      $repeatCounter = new RepeatCounter($_POST['input-string'],$_POST['comparison-string']);
+      $wordCount = $repeatCounter->CountRepeats();
+      return $app['twig']->render('result.html.twig',array ('timesFound' => $wordCount, 'inputString' => $_POST['input-string'], 'comparisonString' => $_POST['comparison-string']));
     });
 
     return $app;
