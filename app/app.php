@@ -12,5 +12,9 @@
       return $app['twig']->render('home.html.twig');
     });
 
+    $app->post("/count", function () use ($app) {
+      return $app['twig']->render('result.html.twig');
+    });
+
     return $app;
 ?>
