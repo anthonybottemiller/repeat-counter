@@ -35,5 +35,19 @@
         $this->assertEquals(1, $result);
     }
 
+    function test_twoWords_Match()
+    {
+        //Test Set-Up
+        $input1 = "php php";
+        $input2 = "php";
+        $test_RepeatCounter = new RepeatCounter($input1, $input2);
+
+        //Program Action
+        $result = $test_RepeatCounter->CountRepeats();
+
+        //Assertion
+        $this->assertEquals(2, $result);
+    }
+
   }
   ?>
