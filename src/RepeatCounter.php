@@ -4,7 +4,7 @@ class RepeatCounter
 {
     private $inputString;
     private $comparisonString;
-    private $count = 0;
+    private $wordCount = 0;
 
     function __construct($inputString, $comparisonString)
     {
@@ -14,7 +14,11 @@ class RepeatCounter
 
     function CountRepeats()
     {
-      return $this->count;
+      if ($this->inputString == $this->comparisonString)
+      {
+        $this->wordCount++;
+      }
+      return $this->wordCount;
     }
 }
 ?>
