@@ -8,7 +8,7 @@
 This page is intended to allow a user to find how many times a string occurs in another string
 
 ##Link
-[Click here to view](#)
+[Click here to view](www.anthonybottemiller.com)
 
 ##Technologies Used
 * HTML
