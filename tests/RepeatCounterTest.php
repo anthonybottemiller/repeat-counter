@@ -10,12 +10,12 @@
     function test_singleWords_noMatch()
     {
         //Test Set-Up
-        $test_RepeatCounter = new RepeatCounter;
         $input1 = "php";
         $input2 = "java";
+        $test_RepeatCounter = new RepeatCounter($input1, $input2);
 
         //Program Action
-        $result = $test_RepeatCounter->CountRepeats($input1, $input2);
+        $result = $test_RepeatCounter->CountRepeats();
 
         //Assertion
         $this->assertEquals(0, $result);
