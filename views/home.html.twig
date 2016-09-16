@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="css/styles.css">
+  <title>Repeat Counter</title>
+</head>
+<body>
+  <div class="jumbotron">
+    <h1>Repeat Counter</h1>
+    <form action='/count' method="post">
+      <div>
+        <label for 'input-string'>String of Words</label>
+        <input type="text" name="input-string">
+      </div>
+      <div>
+        <label for 'comparison-string'>Word to find</label>
+        <input type="text" name="comparison-string">
+      </div>
+      <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+</body>
+</html>
