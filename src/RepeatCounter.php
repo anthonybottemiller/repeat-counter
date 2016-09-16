@@ -14,9 +14,11 @@ class RepeatCounter
 
     function CountRepeats()
     {
-      if ($this->inputString == $this->comparisonString)
+      $this->inputString = explode(" ", $this->inputString);
+      foreach ($this->inputString as $string) 
       {
-        $this->wordCount++;
+        if ($string == $this->comparisonString)        
+          $this->wordCount++;
       }
       return $this->wordCount;
     }
