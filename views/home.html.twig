@@ -9,18 +9,22 @@
   <div class="jumbotron">
     <h1>Repeat Counter</h1>
     <h2>Welcome to the Repeat Counter!</h2>
-    <p class="col-sm-6">This program will tell you how many times a single word occurs in a string of words. Please enter first a number of words and second a word to find in the string of words.</p>
-    <form action='/count' method="post">
-      <div class="form-group">
-        <label for 'input-string'>String of Words</label>
-        <input type="text" name="input-string">
-      </div>
-      <div class="form-group">
-        <label for 'comparison-string'>Word to find</label>
-        <input type="text" name="comparison-string">
-      </div>
-      <button type="submit" class="btn btn-lg btn-primary">Submit</button>
-    </form>
+    <div class="col-sm-5 container">
+      <p>This program will tell you how many times a single word occurs in a string of words. Please enter first a number of words and second a word to find in the string of words.</p>
+    </div>
+    <div class="col-sm-5 container">
+      <form action='/count' method="post">
+        <div class="form-group">
+          <label for 'input-string'>String of Words</label>
+          <input type="text" name="input-string">
+        </div>
+        <div class="form-group">
+          <label for 'comparison-string'>Word to find</label>
+          <input type="text" name="comparison-string">
+        </div>
+        <button type="submit" class="btn btn-lg btn-primary">Submit</button>
+      </form>
+    </div>
   </div>
 </body>
 </html>

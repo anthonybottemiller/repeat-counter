@@ -3,11 +3,19 @@ body {
   background-color: #178EB2;
 }
 
-button {
-  margin: 5px;
+h2 {
+  color: white;
 }
 
 .jumbotron {
   background-color: #00C3FF;
+}
+
+.container {
+  margin: 10px;
+  background-color: #FF8C1A;
+  border: 10px solid #FF8C1A;
+  border-radius: 10px 10px;
+  box-shadow: 8px 5px black;
 }
 
