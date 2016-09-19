@@ -26,7 +26,7 @@ This page is intended to allow a user to find how many times a string occurs in 
 * Internet Access
 
 ##Installation
-* Clone repository, i.e, "git clone https://github.com/anthonybottemiller/repeat-counter
+* Clone repository, i.e, "git clone https://github.com/anthonybottemiller/repeat-counter"
 * Using command line change working directory to cloned repository
 * Execute command "composer install"
 * Start web server with document root repeat-counter/web
