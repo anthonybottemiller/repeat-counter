@@ -8,7 +8,7 @@
 <body>
   <div class="jumbotron">
     <h1>Repeat Counter: Results</h1>
-    <p>Your comparison string "{{comparisonString}}" was found {{timesFound}} time{% if timesFound > 1 %}s{% endif %} in the string:</p>
+    <p>Your comparison string "{{comparisonString}}" was found {{timesFound}} time{% if timesFound != 1 %}s{% endif %} in the string:</p>
     <p>"{{inputString}}"</p>
     <a href="/"><button class="btn btn-lg btn-primary">Go Back</button></a>
   </div>
